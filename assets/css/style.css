@@ -1,8 +1,16 @@
 .container{
   margin:auto;
-  background-color:blue;
   text-align: center;
 }
+
+/* TITLE */
+h2{
+  color: white;
+  font-size: 40pt;
+  padding-top: 50px;
+  font-weight: bold;
+}
+
 
 .crystalDisplay{
   height: 200px;
@@ -11,18 +19,21 @@
 }
 
 .row{
-  background-color: orange;
-  border: 1px solid black;
+  background-color: #9fdf9f;
+  border: 1px solid white;
   height: 200px;
 }
 
 #numDisplays{
   text-align: left;
-  font-size: 28pt;
+  font-size: 32pt;
+  font-weight: bold;
 }
 
 #scoreDisplays{
   font-size: 24pt;
+  color: white;
+  font-weight: bold;
 }
 
 #targetNumberDisplay{
@@ -33,7 +44,8 @@
   color: green;
 }
 
-h2{
-  color: white;
-  font-size: 40pt;
+
+#gameIntroFinal{
+  font-weight: bold;
+  text-align: center;
 }

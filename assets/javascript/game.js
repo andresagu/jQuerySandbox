@@ -1,6 +1,4 @@
 $( document ).ready(function(){
-
-
 //START GAME SETUP VARS UPON LOAD
 
 //Here we can set this equal to some random number between the desired value
@@ -10,6 +8,12 @@ var playerNum;
 //Bool that will just keep track if the game has been started once:
 //Starting the game using a modal that's dismissed onkeypress and setting this to true when that's done
 var gameStarted = false;
+
+//Show the modal in order to explain the rules and start the game
+if(!gameStarted){
+$('#exampleModalCenter').modal('show');
+}
+
 
 //Instantiate all the variables for the crystalNums that will be used to add up to the targetNum
 var crystalNum1;
@@ -68,6 +72,7 @@ $(document).keypress(function(event) {
     gameStarted = true;
     console.log(event.key);
     setupGame();
+    $('#exampleModalCenter').modal('hide');
 
   }
 });
