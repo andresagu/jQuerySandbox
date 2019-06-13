@@ -1,86 +1,94 @@
 <html>
+
 <head>
 	<title>Blank Document</title>
 
 	<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Current doc CSS -->
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Current doc CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
 </head>
+
 <body>
 	<!-- Modal -->
 	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-	  <div class="modal-dialog modal-dialog-centered" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h3 class="modal-title" id="exampleModalLongTitle">Game Rules</h3>
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title" id="exampleModalLongTitle">Game Rules</h3>
 
-	      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-	        <p id= "gameIntro">Welcome!<p>
-	        <p id= "gameIntro">You'll be given a random target number at the start of the game.<p>
-					<p id= "gameIntro">There are 4 crystals below. By clicking the you will add a specific amount to your total score.<p>
-	        <p id= "gameIntro">You win the game by matching your total score to the random target number, you lose if your number goes above the target number.<p>
-					<p id= "gameIntro">The value of each crystal is hidden from you until you click on it.<p>
-					<p id= "gameIntro">Each time the game starts the target and crystal values will change.<p>
-					<br>
-					<p id= "gameIntroFinal">Press SPACE to Begin!<p>
-	      </div>
-	    </div>
-	  </div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p id="gameIntro">Welcome!<p>
+							<p id="gameIntro">You'll be given a random target number at the start of the game.<p>
+									<p id="gameIntro">There are 4 crystals below. By clicking the you will add a specific amount to your total score.<p>
+											<p id="gameIntro">You win the game by matching your total score to the random target number, you lose if your number goes above the target number.<p>
+													<p id="gameIntro">The value of each crystal is hidden from you until you click on it.<p>
+															<p id="gameIntro">Each time the game starts the target and crystal values will change.<p>
+																	<br>
+																	<p id="gameIntroFinal">Press SPACE to Begin!<p>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="container">
-        <div class="row">
-            <div class="col" id="instructions">
-                <h2>Crystal Guess Game</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6" id="numDisplays">
-                <span id="targetNumberDisplay">Target Number</span>
-								<br>
-								<br>
-								<span id="playerNumberDisplay">Player Number</span>
-            </div>
-            <div class="col-6" id="scoreDisplays">
-                <span id="winsDisplay">Wins: </span>
-								<span id="winsDisplayNum"></span>
-								<br>
-								<br>
-                <span id="lossesDisplay">Losses: </span>
-								<span id="lossesDisplayNum"></span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3" id="crystal1">
-                <img class="crystalDisplay" src="assets/images/crystalOne.png" alt="crystal1image">
-            </div>
-            <div class="col-3" id="crystal2">
-                <img class="crystalDisplay" src="assets/images/crystalTwo.png" alt="crystal2image">
-            </div>
-            <div class="col-3" id="crystal3">
-                <img class="crystalDisplay" src="assets/images/crystalThree.png" alt="crystal3image">
-            </div>
-            <div class="col-3" id="crystal4">
-                <img class="crystalDisplay" src="assets/images/crystalFour.png" alt="crysta4image">
-            </div>
-        </div>
+		<div class="row">
+			<div class="col" id="instructions">
+				<h2>Crystal Guess Game</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6" id="numDisplays">
+				<span id="targetNumberDisplay">Target Number</span>
+				<br>
+				<br>
+				<span id="playerNumberDisplay">Player Number</span>
+			</div>
+			<div class="col-6" id="scoreDisplays">
+				<span id="winsDisplay">Wins: </span>
+				<span id="winsDisplayNum"></span>
+				<br>
+				<br>
+				<span id="lossesDisplay">Losses: </span>
+				<span id="lossesDisplayNum"></span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="crystal1">
+				<img class="crystalDisplay" src="assets/images/crystalOne.png" alt="crystal1image">
+			</div>
+			<div class="col-3" id="crystal2">
+				<img class="crystalDisplay" src="assets/images/crystalTwo.png" alt="crystal2image">
+			</div>
+			<div class="col-3" id="crystal3">
+				<img class="crystalDisplay" src="assets/images/crystalThree.png" alt="crystal3image">
+			</div>
+			<div class="col-3" id="crystal4">
+				<img class="crystalDisplay" src="assets/images/crystalFour.png" alt="crysta4image">
+			</div>
+		</div>
+		<div class="row" id="resetRow">
+			<div class="col" id="resetButton">
+				<span class="reset">RESET</span>
+			</div>
+		</div>
 	</div>
 
-    <!-- Latest compiled and minified JavaScript -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- Current doc JS -->
-    <script src="assets/javascript/game.js"></script>
+	<!-- Current doc JS -->
+	<script src="assets/javascript/game.js"></script>
 </body>
+
 </html>

@@ -34,6 +34,7 @@ h2{
   font-size: 24pt;
   color: white;
   font-weight: bold;
+  padding-top: 20px;
 }
 
 #targetNumberDisplay{
@@ -48,4 +49,16 @@ h2{
 #gameIntroFinal{
   font-weight: bold;
   text-align: center;
+}
+
+.reset{
+  color: white;
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+#resetRow{
+  padding-top: 25px;
+  height: 100px;
+
 }
