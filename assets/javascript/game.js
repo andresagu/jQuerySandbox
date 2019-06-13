@@ -54,6 +54,7 @@ function setupGame(){
   //RESET the UI for targetNum and playerNum
 
   $("#targetNumberDisplay").text(targetNum);
+  $("#playerNumberDisplay").text(playerNum);
   $("#winsDisplayNum").text(wins);
   $("#lossesDisplayNum").text(losses);
 
@@ -83,12 +84,13 @@ function crystalEvent1() {
   console.log("1st crystal pressed");
   //Adds the crystal number to player number
   playerNum += crystalNum1;
+  $("#playerNumberDisplay").text(playerNum);
 
   //Once the addition is done it should check if the game has been won or lost
   if (playerNum == targetNum){
     console.log("win");
     //Do winning logic here and then reset the Game
-    win++;
+    wins++;
 
     setupGame();
   }
@@ -108,12 +110,13 @@ function crystalEvent1() {
 function crystalEvent2() {
   console.log("2nd crystal pressed");
   playerNum += crystalNum2;
+  $("#playerNumberDisplay").text(playerNum);
 
   //Once the addition is done it should check if the game has been won or lost
   if (playerNum == targetNum){
     console.log("win");
     //Do winning logic here and then reset the Game
-    win++;
+    wins++;
 
     setupGame();
   }
@@ -130,13 +133,14 @@ function crystalEvent2() {
 function crystalEvent3() {
   console.log("3rd crystal pressed");
   playerNum += crystalNum3;
+  $("#playerNumberDisplay").text(playerNum);
 
 
   //Once the addition is done it should check if the game has been won or lost
   if (playerNum == targetNum){
     console.log("win");
     //Do winning logic here and then reset the Game
-    win++;
+    wins++;
 
     setupGame();
   }
@@ -153,12 +157,13 @@ function crystalEvent3() {
 function crystalEvent4() {
   console.log("4th crystal pressed");
   playerNum += crystalNum4;
+  $("#playerNumberDisplay").text(playerNum);
 
   //Once the addition is done it should check if the game has been won or lost
   if (playerNum == targetNum){
     console.log("win");
     //Do winning logic here and then reset the Game
-    win++;
+    wins++;
 
     setupGame();
   }
