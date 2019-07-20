@@ -1,3 +1,13 @@
 # jQuerySandbox
 
-Using this repo to test & practice some jQuery. Currently implementing a simple number guessing game with a crystal theme.
+## Crystal Guess Game
+
+https://andresagu.github.io/jQuerySandbox/
+
+Testing jQuery by creating a number guessing game.
+
+## Functionality
+Clickable crystals for main interaction with the page. Updating display of game status.
+
+### note:
+Used for jQuery testing. No updates
